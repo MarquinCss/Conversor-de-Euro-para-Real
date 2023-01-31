@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="style.css">
+		<title>Conversor de Euro </title>
+	</head>
+	<body>
+	<div class="iacontainer">
+	<header>Ashley I.A</header>
+	<br>
+	<div class="conte">
+	<label for="nome"><strong>Olá Humano</strong> Seja bem-vindo, Digite seu nome:</label>
+    <input type="text" id="nome" placeholder="Nome terráqueo" autocomplete="off" oninput="updateWelcomeMessage()">
+    <br><br>
+	 <p id="welcome-message"></p>
+	 <br>
+	<label for="valorEmEuro">Diga-me o <strong>valor em Euro</strong> que deseja Converter:</label>
+    <input type="text" id="valorEmEuro" placeholder="Euro"autocomplete="off">
+    <br>
+	<center>
+    <button onclick="calculate()">Converter</button>
+	<br><br>
+   
+   <img class="ash" align="left" width="200px" height="300px" src="ashl.png"> <p id="result"></p></img> 
+	
+	</div>
+	
+	</div>
+   
+  </body>
+  
+   <script>
+   function updateWelcomeMessage() {
+  var nome = document.getElementById("nome").value;
+  document.getElementById("welcome-message").innerHTML = "Então " + nome + ", eu sou Inteligência artificial Ashley e vou te ajudar a converter Euros para Reais abaixo.";
+}
+
+function calculate() {
+  var valorEmEuro = parseFloat(document.getElementById("valorEmEuro").value);
+  var cotacaoDoEuro = 5.55;
+
+  var valorEmReal = valorEmEuro * cotacaoDoEuro;
+  valorEmReal = valorEmReal.toFixed(2);
+
+  document.getElementById("result").innerHTML = "O valor em reais é R$ " + valorEmReal;
+}
+    </script>
+</html>

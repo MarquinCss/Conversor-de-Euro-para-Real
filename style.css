@@ -1,0 +1,110 @@
+/*By Marco Marchi*/
+
+@import url('https://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.cdnfonts.com/css/gotham');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size:35px;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:80px;
+}
+
+header{
+	font-size:40px;
+	border-radius:10px;
+		background-color:#9932CC ;
+	text-align:center;
+	font-family: 'Gotham Black', sans-serif;
+}
+
+label{
+	font-family: 'Gotham', sans-serif;
+}
+
+.iacontainer{
+	position:block;
+	margin:-30px;
+	background-color:#BA55D3;
+	border-radius:50px;
+	
+}
+
+.conte{
+	text-align:center;
+}
+strong{
+font-size:35px;	
+	
+}
+
+input{
+	font-size:32px;
+	caret-color:indigo;
+    border-radius:50px;
+	text-align:center;
+	color:#4B0082;
+}
+button {
+	text-align:center;
+  padding: 10px 20px;
+  background-color: #a439a4;
+  width:110px;
+  height:60px;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8e2f8e;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #a439a4;
+}
+
+/*Responsividade*/
+@media (max-width: 600px) {
+  body {
+    padding: 50px;
+  }
+  
+  .ash{
+	  
+	  width:100px;
+	  height:200px;
+  }
+  
+  header {
+    font-size: 30px;
+  }
+  
+  p{font-size:20px;
+  }
+  
+  label {
+    font-size: 25px;
+  }
+  
+  input {
+    font-size: 20px;
+  }
+  
+  button {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
